@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Header With Menu</title>
+    <style type="text/css">
+        @font-face {
+                font-family: 'Arial';
+                font-weight: normal;
+        }
+        
+        body {
+            width: 100%;
+            font: 11pt Arial, serif;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #a1a1a1;
+        }
+
+        a:hover{
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        table {
+            margin-top: -8px;
+            margin-left: -8px;
+            width: 100%;
+            height: 60px;
+            background-color: rgb(35, 68, 101);
+            padding-left: 100px;
+        }
+
+        ul {
+            float: right;
+        }
+
+        li {
+            float: left;
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        #notification-icon {
+            width: 25px;
+            margin-top: 0;
+        }
+
+        .icons {
+            margin-top: 0;
+            width: 25px;
+        }
+
+        #profile {
+            width: 25px;
+            margin-top: 0;
+        }
+
+        .menu::after {
+            visibility: hidden;
+            content: url("img/menu.png");
+        }
+
+        .menu:hover::after{
+            visibility: visible;
+        }
+        .menu:focus {
+            color: orange;
+        }
+
+        #apply {
+            display: inline-block;
+            width: 160px;
+            height: 30px;
+            line-height: 30px;
+            color: #fff;
+            text-align: center;
+
+            border-radius: 30px;
+            border: 2px solid transparent;
+            background-color: #ffa000;
+        }
+
+        #apply:hover {
+            color: rgb(35, 68, 101);
+            background-color: #fff;
+        }
+        #test {
+            background-image: url("img/search-icon.png");
+        }
+        #header-underline {
+            height: 5px;
+            background-color: #c87d00;
+            margin-left: -8px;
+        }
+        td {
+            /*border: 1pt solid black;*/
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <td id="logo"><a href="https://softuni.bg"><img src="img/SoftUni-Logo-Wide.png"></a></td>
+        <td><a href="#" id="apply">Кандидатствай!</a></td>
+        <td>
+            <ul type="none">
+                <li class="menu"><a href="#">SOFTUNI</a></li>
+                <li class="menu"><a href="#">TRAININGS</a></li>
+                <li><a href="#">JOBS</a></li>
+                <li><a href="#">PARTNERS</a></li>
+                <li><a href="#">FORUM</a></li>
+                <li><a href="#">CONTACTS</a></li>
+                <li><a href="#"><a href="#" id="test"></a></a></li>
+                <li class="icons"><a href=""><img id="notification-icon" src="img/notification-icon.png"></a></li>
+                <li class="icons"><a href=""><img id="profile" src="img/profile-icon.png"></a></li>
+            </ul>
+        </td>
+    </table>
+    <div id="header-underline"></div>
+</body>
+</html>
