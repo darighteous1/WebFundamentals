@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Header With Menu</title>
+    <style type="text/css">
+	    * {
+	    	margin: 0;
+	    	padding: 0;
+	    }
+        @font-face {
+                font-family: 'Arial';
+                font-weight: normal;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            max-width: 100% - 40px;
+            height: 100%;
+            font: 10pt Arial, serif;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #a1a1a1;
+        }
+
+        a:hover{
+            color: #fff;
+            cursor: pointer;
+        }
+        header {
+            background-color: #234465;
+            height: 60px;
+        }
+        table {
+            margin: 0 auto;
+            width: 70%;
+            height: 60px;
+            background-color: #234465;
+        }
+
+        #main-nav {
+        	margin: 0;
+            float: right;
+        }
+
+        table ul li {
+            float: left;
+            margin-right: 5px;
+            line-height: 100%;
+        }
+
+        .cell {
+        	margin-top: 8px;
+        }
+
+        #notification-icon {
+            width: 25px;
+            margin-top: 0;
+        }
+
+        .icons {
+            margin-top: 0;
+            width: 25px;
+        }
+
+        #profile {
+            width: 25px;
+            margin-top: 0;
+        }
+
+        .menu::after {
+            visibility: hidden;
+            content: url("img/menu.png");
+        }
+
+        .menu:hover::after{
+            visibility: visible;
+        }
+        .menu:focus {
+            color: orange;
+        }
+
+        #apply {
+            display: inline-block;
+            width: 100px;
+            height: 25;
+            line-height: 25px;
+            color: #fff;
+            text-align: center;
+
+            border-radius: 30px;
+            border: 2px solid transparent;
+            background-color: #ffa000;
+        }
+
+        #apply:hover {
+            color: #234465;
+            background-color: #fff;
+        }
+
+        .cleaner {
+        	float: none;
+        	display: block;
+        	clear: both;
+        }
+
+        /*dropdown menu*/
+        .dropdown {
+        	width: 100%;
+            display: block;
+            opacity: 1;
+            position: absolute;
+            left: 0;
+            top: 60px;
+            background-color: #162b40; 
+        }
+
+        #softuni-wrapper {
+        	position: absolute;
+        	height: 100px;
+        	top: 0;
+        	left: 0;
+        	width: 100%;
+        	background-color: #162b40;
+        	z-index: 1;
+/*        	display: none;*/
+        	opacity: 0;
+			-webkit-transition: opacity 0.5s ease-in-out;
+			-moz-transition: opacity 0.5s ease-in-out;
+			-ms-transition: opacity 0.5s ease-in-out;
+			-o-transition: opacity 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
+        }
+        #softuni {
+        	width: 80%;
+        	margin: 0 auto;
+        	padding-top: 15px;
+        	font-size: 12pt;
+        }
+        #softuni li {
+        	float: left;
+        	width: 25%;
+        }
+
+        #trainings-wrapper {
+        	position: absolute;
+        	height: 70px;
+        	top: 0;
+        	left: 0;
+        	width: 100%;
+        	background-color: #162b40;
+        	z-index: 1;
+/*        	display: none;*/
+        	opacity: 0;
+			-webkit-transition: opacity 0.5s ease-in-out;
+			-moz-transition: opacity 0.5s ease-in-out;
+			-ms-transition: opacity 0.5s ease-in-out;
+			-o-transition: opacity 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
+        }
+
+        #trainings {
+        	width: 80%;
+        	margin: 0 auto;
+        	padding-top: 15px;
+        	font-size: 12pt;
+        }
+        #trainings li {
+        	float: left;
+        	width: 25%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <table>
+        <td id="logo"><a href="https://softuni.bg"><img src="img/SoftUni-Logo-Wide.png"></a></td>
+        <td><a href="#" id="apply">Apply!</a></td>
+        <td>
+            <ul type="none" id="main-nav">
+                <li class="menu cell" id="softuniBtn"><a href="#">SOFTUNI</a></li>
+                <li class="menu cell" id="trainingsBtn"><a href="#">TRAININGS</a></li>
+                <li class="cell"><a href="#">JOBS</a></li>
+                <li class="cell"><a href="#">PARTNERS</a></li>
+                <li class="cell"><a href="#">FORUM</a></li>
+                <li class="cell"><a href="#">CONTACTS</a></li>
+                <li class="cell"><a href="#"><a href="#" id="test"></a></a></li>
+                <li class="icons"><a href=""><img id="notification-icon" src="img/notification-icon.png"></a></li>
+                <li class="icons"><a href=""><img id="profile" src="img/profile-icon.png"></a></li>
+            </ul>
+        </td>
+    </table>
+    <div class="dropdown">
+        <div id="softuni-wrapper">
+            <ul type="none" id="softuni">
+                <li class="cell"><a href="#">About SoftUni</a></li>
+                <li class="cell"><a href="#">Diplomas and certificates</a></li>
+                <li class="cell"><a href="#">Fees and scholarships</a></li>
+                <li class="cell"><a href="#">Partner universities</a></li>
+                <li class="cell"><a href="#">Curriculum</a></li>
+                <li class="cell"><a href="#">Technical Trainers</a></li>
+                <li class="cell"><a href="#">How to apply</a></li>
+                <li class="cell"><a href="#">Frequently asked questions</a></li>
+                <span class="cleaner"></span>
+            </ul>
+        </div>
+        <div id="trainings-wrapper">
+            <ul type="none" id="trainings">
+                <li><a href="">Basic Level</a></li>
+                <li><a href="">Fundamentals Level</a></li>
+                <li><a href="">Advanced Level: Front End</a></li>
+                <li><a href="">Advanced Level: Back End</a></li>
+            	<span class="cleaner"></span>
+            </ul>
+        </div>
+        <span class="cleaner"></span>
+    </di>
+</header>
+    <script type="text/javascript">
+        var softuniBtn = document.getElementById("softuniBtn");
+        var trainingsBtn = document.getElementById("trainingsBtn");
+        var softuniMenu = document.getElementById("softuni-wrapper");
+       	var trainingsMenu = document.getElementById("trainings-wrapper");
+
+        softuniBtn.addEventListener("click", function(){
+        	if (softuniMenu.style.opacity == 0) {	
+	        	softuniMenu.style.zIndex = 1;
+	        	softuniMenu.style.opacity = 1;
+
+	        	trainingsMenu.style.zIndex = -1;
+	        	trainingsMenu.style.opacity = 0;
+        	} else {
+	        	softuniMenu.style.zIndex = -1;
+	        	softuniMenu.style.opacity = 0;
+        	}
+        });
+
+        trainingsBtn.addEventListener("click", function(){
+        	if (trainingsMenu.style.opacity == 0) {	
+	        	trainingsMenu.style.zIndex = 1;
+	        	trainingsMenu.style.opacity = 1;
+
+	        	softuniMenu.style.zIndex = -1;
+	        	softuniMenu.style.opacity = 0;
+        	} else {
+	        	trainingsMenu.style.zIndex = -1;
+	        	trainingsMenu.style.opacity = 0;
+        	}
+        });
+
+    </script>
+</body>
+</html>
