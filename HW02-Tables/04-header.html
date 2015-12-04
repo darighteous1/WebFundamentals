@@ -3,15 +3,19 @@
 <head>
     <meta charset="utf-8">
     <title>Header With Menu</title>
+
+<!-- CSS and JavaScript is inlined only for the sake of this exercise. CSS and JS code should be positioned in separate files and included here -->
     <style type="text/css">
         @font-face {
-                font-family: 'Arial';
-                font-weight: normal;
+            font-family: 'Arial';
+            font-weight: normal;
         }
         html {
             height: 100%;
         }
         body {
+            padding: 0;
+            margin: 0;
             width: 100%;
             height: 100%;
             font: 11pt Arial, serif;
@@ -23,15 +27,18 @@
             color: #a1a1a1;
         }
 
-        a:hover{
+        .dropdown li a:hover {
             color: #fff;
+        }
+
+        a:hover{
+            color: #fff !important;
             cursor: pointer;
         }
         header {
-            margin-top: -8px;
-            margin-left: -8px;
             background-color: rgb(35, 68, 101);
-            height: 60px;
+            height: 63px;
+            position: relative;
         }
         table {
             margin: auto;
@@ -41,7 +48,7 @@
             padding-left: 100px;
         }
 
-        ul {
+        header table ul {
             float: right;
         }
 
@@ -66,6 +73,44 @@
             margin-top: 0;
         }
 
+        .menu {
+
+        }
+
+        .dropdown-wrapper {
+            position: absolute;
+            left: 0;
+            top: 60px;
+            width: 100%;
+            height: 100px;
+            background-color: #162b40;
+            opacity: 0;
+            -webkit-transition: opacity 0.5s ease-in-out;
+            -moz-transition: opacity 0.5s ease-in-out;
+            -ms-transition: opacity 0.5s ease-in-out;
+            -o-transition: opacity 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .dropdown {
+            margin: 25px auto;
+            width: 50%;
+            background-color: #162b40;
+            opacity: 0;
+            -webkit-transition: opacity 0.5s ease-in-out;
+            -moz-transition: opacity 0.5s ease-in-out;
+            -ms-transition: opacity 0.5s ease-in-out;
+            -o-transition: opacity 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .dropdown li {
+            float: left;
+            margin: 0 0 10px 0 ;
+            width: 25%;
+            color: ;
+        }
+
         .menu::after {
             visibility: hidden;
             content: url("img/menu.png");
@@ -74,13 +119,10 @@
         .menu:hover::after{
             visibility: visible;
         }
-        .menu:focus {
-            color: orange;
-        }
-
+        
         #apply {
             display: inline-block;
-            width: 150px;
+            width: 100px;
             height: 25;
             line-height: 25px;
             color: #fff;
@@ -103,8 +145,15 @@
             background-color: #c87d00;
             margin-left: -8px;
         }
-        td {
-            /*border: 1pt solid black;*/
+
+        .cleaner {
+            display: block;
+            clear: both;
+            height: 0;
+            content: '.';
+            font-size: 0;
+            line-height: 0;
+            visibility: hidden;
         }
         
     </style>
@@ -113,11 +162,15 @@
 <header>
     <table>
         <td id="logo"><a href="https://softuni.bg"><img src="img/SoftUni-Logo-Wide.png"></a></td>
-        <td><a href="#" id="apply">Кандидатствай!</a></td>
+        <td><a href="#" id="apply">Apply!</a></td>
         <td>
             <ul type="none">
-                <li class="menu" id="softuni"><a href="#">SOFTUNI</a></li>
-                <li class="menu" id="trainings"><a href="#">TRAININGS</a></li>
+                <li class="menu" id="softuni">
+                    <a href="#">SOFTUNI</a>    
+                </li>
+                <li class="menu" id="trainings">
+                    <a href="#">TRAININGS</a>
+                </li>
                 <li><a href="#">JOBS</a></li>
                 <li><a href="#">PARTNERS</a></li>
                 <li><a href="#">FORUM</a></li>
@@ -128,15 +181,82 @@
             </ul>
         </td>
     </table>
-</header>
     <div id="header-underline"></div>
+    <div class="dropdown-wrapper" id="softuni-dropdown-wrapper">
+        <ul class="dropdown" id="softuni-dropdown" type="none">
+            <li><a href="https://softuni.bg/about">About SoftUni</a></li>
+            <li><a href="https://softuni.bg/diplomas-and-certificates">Diplomas and certificates</a></li>
+            <li><a href="https://softuni.bg/plans">Fees and scholarships</a></li>
+            <li><a href="https://softuni.bg/university-partners">Partner universities</a></li>
+            <li><a href="https://softuni.bg/curriculum">Curriculum</a></li>
+            <li><a href="https://softuni.bg/trainers">Technical Trainers</a></li>
+            <li><a href="https://softuni.bg/how-to-apply">How to apply</a></li>
+            <li><a href="https://softuni.bg/faq">Frequently asked questions</a></li>
+        </ul>
+    </div>
+    <div class="dropdown-wrapper" id="trainings-dropdown-wrapper">
+        <ul class="dropdown" id="trainings-dropdown" type="none">
+           <li><a href="https://softuni.bg/trainings/courses#basic-level">Basic Level</a></li>
+           <li><a href="https://softuni.bg/trainings/courses#fundamental-level">Fundamentals Level</a></li>
+           <li><a href="https://softuni.bg/trainings/courses#advanced-level-front-end">Advanced Level: Frontend</a></li>
+           <li><a href="https://softuni.bg/trainings/courses#advanced-level-back-end">Advanced Level: Backend</a></li>
+        </ul>
+        <span class="cleaner"></span>
+    </div>
+</header>
+   
     <script type="text/javascript">
-        var softuniMenu = document.getElementById("softuni");
-        var trainingsMenu = document.getElementById("trainings");
-        softuniMenu.addEventListener("click", function(){
 
+        var softuniWrapper = document.getElementById("softuni-dropdown-wrapper");
+        var trainingsWrapper = document.getElementById("trainings-dropdown-wrapper");
+        var softuniBtn = document.getElementById("softuni");
+        var trainingsBtn = document.getElementById("trainings");
+        var softuni = document.getElementById("softuni-dropdown");
+        var trainings = document.getElementById("trainings-dropdown");
+
+        softuniBtn.addEventListener("click", function() {
+            if (softuniWrapper.style.opacity == 0) {
+                softuniWrapper.style.display = "block";
+                softuniWrapper.style.opacity = 1;
+                softuniWrapper.style.zIndex = 1;
+                softuni.style.opacity = 1;
+                softuni.style.zIndex  = 1;
+
+                trainings.style.opacity = 0;
+                trainings.style.zIndex  = -1;
+                trainingsWrapper.style.opacity = 0;
+                trainingsWrapper.style.display = "";
+                trainingsWrapper.style.zIndex = -1;
+            } else {
+                softuniWrapper.style.opacity = 0;
+                softuniWrapper.style.display = "";
+                softuniWrapper.style.zIndex = -1;
+                softuni.style.opacity = 0;
+                softuni.style.zIndex = -1;
+            }
         });
 
+        trainingsBtn.addEventListener("click", function() {
+            if (trainingsWrapper.style.opacity == 0) {
+                trainingsWrapper.style.display = "block";
+                trainingsWrapper.style.opacity = 1;
+                trainingsWrapper.style.zIndex = 1;
+                trainings.style.opacity = 1;
+                trainings.style.zIndex  = 1;
+
+                softuni.style.opacity = 0;
+                softuni.style.zIndex  = -1;
+                softuniWrapper.style.opacity = 0;
+                softuniWrapper.style.display = "";
+                softuniWrapper.style.zIndex = -1;
+            } else {
+                trainingsWrapper.style.opacity = 0;
+                trainingsWrapper.style.display = "";
+                trainingsWrapper.style.zIndex = -1;
+                trainings.style.opacity = 0;
+                trainings.style.zIndex = -1;
+            }
+        });
     </script>
 </body>
 </html>
