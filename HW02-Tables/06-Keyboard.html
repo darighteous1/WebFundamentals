@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SoftUni Life</title>
+    <style type="text/css">
+    table {
+        width: 50%;
+        margin: auto;
+    }
+    table, tr, th, td {
+        border: 1px solid black;
+    }
+
+    tr, th, td {
+        padding: 2px
+    }
+
+    tr {
+        height: 100px;
+    }
+    td {
+        width: 100px;
+    }
+
+    button {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        font-size: 14pt;
+        font-family: Arial;
+        text-align: center;
+        vertical-align: middle;
+    }
+    #table-header button {
+        font-size: 40pt;
+        font-weight: bold;
+        padding: 0 15px;
+    }
+    #inner-wrapper {
+        padding: 5px;
+    }
+    #inner-table tr {
+        height: 50px;
+        width: 100px;
+    }
+    #beer {
+        font-size: 18pt;
+        text-align: right;
+    }
+    .inner-cell {
+        font-size: 10pt;
+        font-weight: bold;
+        height: 25px;
+        padding: 2px;
+    }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="row">
+            <td colspan="4" id="table-header"><button>SoftUni Life</button></td>
+        </tr>
+        <tr id="row2" class="row">
+            <td colspan="2"><button>Google</td>
+            <td colspan="2"><button>GitHub</td>
+        </tr>
+        <tr id="row3" class="row">
+            <td><button>FB</button></td>
+            <td><button>GMail</button></td>
+            <td><button>YouTube</button></td>
+            <td><button>2048</button></td>
+        </tr>
+        <tr id="row4" class="row">
+            <td><button>Food</button></td>
+            <td colspan="2"><button>Game</button></td>
+            <td id="inner-wrapper">
+                <table id="inner-table">
+                    <tr>
+                        <td class="inner-cell"><button>Social Life</button></td>
+                    </tr>
+                    <tr>
+                        <td class="inner-cell"><button>Sleep</button></td>
+                    </tr>
+                </table>   
+            </td>
+        </tr>
+        <tr id="row5" class="row">
+            <td colspan="3" id="beer"><button>Beer &gt;&gt;&gt;</button></td>
+            <td><button>WC</button></td>
+        </tr>
+    </table>
+</body>
+</html>
