@@ -60,36 +60,75 @@
 <body>
     <table>
         <tr class="row">
-            <td colspan="4" id="table-header"><button>SoftUni Life</button></td>
+            <td colspan="4" id="table-header"><button id="softuni">SoftUni Life</button></td>
         </tr>
         <tr id="row2" class="row">
-            <td colspan="2"><button>Google</td>
-            <td colspan="2"><button>GitHub</td>
+            <td colspan="2"><button id="google">Google</td>
+            <td colspan="2"><button id="github">GitHub</td>
         </tr>
         <tr id="row3" class="row">
-            <td><button>FB</button></td>
-            <td><button>GMail</button></td>
-            <td><button>YouTube</button></td>
-            <td><button>2048</button></td>
+            <td><button id="facebook">FB</button></td>
+            <td><button id="gmail">GMail</button></td>
+            <td><button id="youtube">YouTube</button></td>
+            <td><button id="game2048">2048</button></td>
         </tr>
         <tr id="row4" class="row">
-            <td><button>Food</button></td>
-            <td colspan="2"><button>Game</button></td>
+            <td><button id="food">Food</button></td>
+            <td colspan="2"><button id="games">Game</button></td>
             <td id="inner-wrapper">
                 <table id="inner-table">
                     <tr>
-                        <td class="inner-cell"><button>Social Life</button></td>
+                        <td class="inner-cell" id="social-life"><button>Social Life</button></td>
                     </tr>
                     <tr>
-                        <td class="inner-cell"><button>Sleep</button></td>
+                        <td class="inner-cell"><button id="sleep">Sleep</button></td>
                     </tr>
                 </table>   
             </td>
         </tr>
         <tr id="row5" class="row">
-            <td colspan="3" id="beer"><button>Beer &gt;&gt;&gt;</button></td>
+            <td colspan="3" id="beer"><button id="drinks">Beer &gt;&gt;&gt;</button></td>
             <td><button>WC</button></td>
         </tr>
     </table>
+
+    <script type="text/javascript">
+        document.getElementById("softuni").addEventListener("click", function() {
+            location="http://softuni.bg";
+        });
+        document.getElementById("google").addEventListener("click", function() {
+            location="http://google.com";
+        });
+        document.getElementById("github").addEventListener("click", function() {
+            location="http://github.com";
+        });
+        document.getElementById("facebook").addEventListener("click", function() {
+            location="http://facebook.com";
+        });
+        document.getElementById("gmail").addEventListener("click", function() {
+            location="http://gmail.com";
+        });
+        document.getElementById("youtube").addEventListener("click", function() {
+            location="http://youtube.com";
+        });
+        document.getElementById("game2048").addEventListener("click", function() {
+            location="http://2048game.com";
+        });
+        document.getElementById("food").addEventListener("click", function() {
+            location="http://www.whatthefuckshouldimakefordinner.com";
+        });
+        document.getElementById("games").addEventListener("click", function() {
+            location="http://kongregate.com";
+        });
+        document.getElementById("social-life").addEventListener("click", function() {
+            location="https://www.facebook.com/SoftwareUniversity/events";
+        });
+        document.getElementById("sleep").addEventListener("click", function() {
+            location="http://sleep.com/wordpress1";
+        });
+        document.getElementById("drinks").addEventListener("click", function() {
+            location="http://www.beeradvocate.com";
+        });        
+    </script>
 </body>
 </html>
