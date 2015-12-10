@@ -1,0 +1,115 @@
+/**********************************************************************
+RESET
+**********************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6,
+ol, p, pre, table, ul, dd, dt, li, tbody, td, tfoot, th, thead, tr,
+button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite,
+code, dfn, em, i, img, kbd, q, samp, small, span, strong, sub, sup, tt,
+var, legend, fieldset {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section {
+  display: block;
+}
+*:focus {
+  outline: none;
+} 
+
+html {
+    min-height: 100%;
+}
+
+body {
+   width: 100%;
+}
+
+tr, td, th {
+    border: 1px solid black;
+}
+
+td {
+    border-top: 0;
+    border-left: 0;
+    padding: 0 10px;
+}
+
+tr td:first-child {
+    border-left: 1px solid black;
+}
+tr {
+    height: 50px;
+}
+th {
+
+    border-left: 0;
+    background-color: #ca0;
+    font-size: 20pt;
+    padding: 5px;
+}
+
+tr th:first-child {
+    border-left: 1px solid black;
+}
+
+table {
+    width: 90%;
+    height: 500px;
+    border-spacing: 0;
+}
+
+main {
+    width: 100%;
+    height: 500px;
+    background-color: green;
+    padding: 25px;
+}
+
+table tr:last-child td:first-child {
+    -moz-border-radius-bottomleft:30px;
+    -webkit-border-bottom-left-radius:30px;
+    border-bottom-left-radius:30px
+}
+
+table tr:last-child td:last-child {
+    -moz-border-radius-bottomright:30px;
+    -webkit-border-bottom-right-radius:30px;
+    border-bottom-right-radius:30px
+}
+
+table tr:first-child th:first-child {
+    -moz-border-radius-topleft:30px;
+    -webkit-border-top-left-radius:30px;
+    border-top-left-radius:30px
+}
+
+table tr:first-child th:last-child {
+    -moz-border-radius-topright:30px;
+    -webkit-border-top-right-radius:30px;
+    border-top-right-radius:30px
+}
+
+.flag {
+    display: inline-block;
+    width: 30px;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+#brazil {
+    background-image: url("img/brazil.png");
+}
