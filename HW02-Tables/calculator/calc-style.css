@@ -1,0 +1,97 @@
+/**********************************************************************
+RESET
+*********************************************************************/
+
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6,
+ol, p, pre, table, ul, dd, dt, li, tbody, td, tfoot, th, thead, tr,
+button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite,
+code, dfn, em, i, img, kbd, q, samp, small, span, strong, sub, sup, tt,
+var, legend, fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section {
+  display: block;
+}
+
+*:focus {
+  outline: none;
+} 
+body, div, button {
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#calculator {
+    background-color: #444;
+    width: 545px;
+    height: 600px;
+    border: 3px black solid;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#display {
+    height: 120px;
+    width: 530px;
+    margin: 10px auto;
+    padding-right: 10px;
+    background-color: #f3f3f3;
+    color: #333;
+    margin-bottom: 25px;
+    vertical-align: middle;
+    text-align: right;
+    line-height: 120px;
+    font-size: 60px;
+    border-radius: 10px;
+}
+
+#display:hover {
+    cursor: pointer;
+}
+
+#numbers, #operators {
+    margin: 0 auto;
+    float: left;  
+}
+
+#numbers > div > button {
+    margin: 3px;
+}
+
+button {
+    margin: 3px;
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+    background-color: #10f0f5;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+#operators button {
+    display: block;
+    margin-bottom: 6px !important;
+}
+
+#operators > div {
+    float: left;
+}
+
+#equals {
+    display: block;
+    width: 206px !important;
+    height: 206px !important;
+    font-size: 48px;
+}
