@@ -1,0 +1,82 @@
+/**********************************************************************
+RESET
+**********************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6,
+ol, p, pre, table, ul, dd, dt, li, tbody, td, tfoot, th, thead, tr,
+button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite,
+code, dfn, em, i, img, kbd, q, samp, small, span, strong, sub, sup, tt,
+var, legend, fieldset {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section {
+  display: block;
+}
+*:focus {
+  outline: none;
+} 
+
+html {
+    min-height: 100%;
+}
+
+body {
+   width: 100%;
+   background-color: #aaa
+}
+
+/**********************************************************************/
+
+#wrapper {
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: 15px 15px 5px #333;
+    border-top: 7px dotted #ff5;
+    border-left: 7px dashed #f00;
+    border-right: 7px solid #0f0;
+    border-bottom: 7px double #00f;
+    background-color: #eee;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 5px 5px 5px #aaa;
+}
+
+#blue {
+    margin: auto;
+    width: 90%;
+    border: 2px solid blue;
+    border-radius: 50px;
+}
+
+#green {
+    border: 2px solid green;
+    border-radius: 50px;
+}
+
+#yellow {
+    border: 2px solid yellow;
+    border-radius: 50px;
+}
+
+#red {
+    
+    border: 2px solid red;
+    border-radius: 50px;
+    font-family: Arial;
+    font-size: 0.6em;
+    font-weight: normal;
+    text-shadow: none;
+}
+
+.button {
+    width: 30%;
+    font-size: 0.8em;
+}
