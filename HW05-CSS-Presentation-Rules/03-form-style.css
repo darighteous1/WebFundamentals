@@ -1,0 +1,79 @@
+/**********************************************************************
+RESET
+**********************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6,
+ol, p, pre, table, ul, dd, dt, li, tbody, td, tfoot, th, thead, tr,
+button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite,
+code, dfn, em, i, img, kbd, q, samp, small, span, strong, sub, sup, tt,
+var, legend, fieldset {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section {
+  display: block;
+}
+*:focus {
+  outline: none;
+} 
+/*********************************************************************/
+
+input {
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+body {
+    
+}
+
+h3 {
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    margin: 10px 0;
+}
+label {
+    width: 50px;
+}
+span {
+    width: 50px;
+    height: 25px;
+}
+
+main {
+    width: 350px;
+    padding: 10px;
+    border: 1px solid black;
+    background-image: url("resources/formBackground.jpg");
+    background-repeat: no-repeat;
+}
+
+section {
+    border-radius: 5px;
+    background-color: #659BCC;
+    opacity: 0.7;
+    margin: 5px auto;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+#submit{
+    width: 100%;
+    text-align: center;
+}
+
+
+#submit input {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #002456;
+    color: white;
+    border: none;
+    font-weight: bold;
+}

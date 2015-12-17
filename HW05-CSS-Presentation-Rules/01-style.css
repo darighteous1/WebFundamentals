@@ -32,8 +32,8 @@ body {
 /**********************************************************************/
 
 #wrapper {
+    position: relative;
     width: 500px;
-    height: 250px;
     margin: auto;
     margin-top: 150px;
     box-shadow: 15px 15px 5px #333;
@@ -46,11 +46,16 @@ body {
 
 h1 {
     text-align: center;
+    margin: 25px auto;
+}
+
+.shadow {
+    
     text-shadow: 5px 5px 5px #aaa;
 }
 
 #blue {
-    margin: auto;
+    margin: 25px auto;
     width: 90%;
     border: 2px solid blue;
     border-radius: 50px;
@@ -67,16 +72,65 @@ h1 {
 }
 
 #red {
-    
     border: 2px solid red;
     border-radius: 50px;
     font-family: Arial;
     font-size: 0.6em;
     font-weight: normal;
     text-shadow: none;
+    padding: 15px 0;
 }
 
 .button {
     width: 30%;
     font-size: 0.8em;
+    background-color: #D8941A;
+    padding: 3px 5px;
+    margin-bottom: 5px !important;
+    border-bottom: 3px solid #81580F;
+    border-right: 3px solid #81580F;
+    border-top: 3px solid #e3b45e;
+    border-left: 3px solid #e3b45e;
+}
+
+#inner p {
+    margin-bottom: 15px;
+}
+
+.floating {
+    position: absolute;
+    background-color: #999;
+    border: 2px dashed white;
+    box-shadow: 0 0 0 3pt #999;
+    opacity: 0.8;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+#small {
+    top: 130px;
+    left: 380px;
+    width: 15px;
+    height: 15px;
+
+}
+
+#medium {
+    top: 90px;
+    left: 410px;
+    width: 30px;
+    height: 30px;
+}
+
+#big {
+    top: 40px;
+    left: 470px;
+    width: 90px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: Arial;
+    font-size: 14pt;
+    color: white;
 }

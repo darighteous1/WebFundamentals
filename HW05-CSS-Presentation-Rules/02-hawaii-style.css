@@ -1,0 +1,117 @@
+/**********************************************************************
+RESET
+**********************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6,
+ol, p, pre, table, ul, dd, dt, li, tbody, td, tfoot, th, thead, tr,
+button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite,
+code, dfn, em, i, img, kbd, q, samp, small, span, strong, sub, sup, tt,
+var, legend, fieldset {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section {
+  display: block;
+}
+*:focus {
+  outline: none;
+} 
+/*********************************************************************/
+html {
+    width: 900px;
+    height: 600px;
+}
+
+body {
+    width: 900px;
+    height: 600px;
+    background: #87CEEB; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(#87CEEB, #0085FF); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#87CEEB, #0085FF); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#87CEEB, #0085FF); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#87CEEB, #0085FF); /* Standard syntax */
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+@font-face {
+    font-family: Animated;
+    src: url("resources/Animated.ttf");
+    font-weight: normal;
+}
+
+header {
+    margin: 10px;
+    font-family: Animated;
+    font-size: 36pt;
+    color: #FFD700;
+    float: right;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url("resources/HawaiiBackground.png");
+    position: relative;
+    z-index: 5;
+}
+
+#sun {
+    width: 250px;
+    height: 230px;
+    position: absolute;
+    top: 30px;
+    left:150px;
+    border-radius: 50%;
+    background: #ffff4c; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(#ffffcc 15%, #ffe766 35%, white 10%, #4ca9ff 10%);
+    background: -o-radial-gradient(#ffffcc 15%, #ffe766 35%, white 10%, #4ca9ff 10%);
+    background: -moz-radial-gradient(#ffffcc 15%, #ffe766 35%, white 10%, #4ca9ff 10%);
+    background: radial-gradient(#ffffcc 15%, #ffe766 35%, white 10%, #4ca9ff 10%);
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+img {
+    position: absolute;
+    height: 350px;
+    
+    z-index: 1000;
+}
+
+#vladog {
+    top: 230px;
+    left: 45px;
+}
+
+#vladok {
+    top: 205px;
+    left: 665px;
+}
+
+#alex {
+    top: 195px;
+    left: 500px;
+}
+
+#nakov {
+    top: 160px;
+    left: 430px;
+}
+
+#petia {
+    top: 205px;
+    left: 185px;
+}
+
+#tedi {
+    height: 200px;
+    top: 360px;
+    left: 260px;
+}
+
+/**********************************************************************/
