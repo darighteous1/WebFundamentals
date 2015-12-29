@@ -91,13 +91,17 @@ nav > ul > li {
     font-size: 60px;
     font-weight: bold;
     color: #43E8D8;
+    letter-spacing: 6px;
 }
 
 #small-slogan {
-    margin: 0;
+    margin-top: -10px;
     margin-bottom: 25px;
     font-family: 'Ubuntu';
-    font-size: 16px;
+    font-size: 14px;
+    color: #edfdfc;
+    font-weight: bold;
+    word-spacing: 10px;
 }
 
 .big-slogan {
