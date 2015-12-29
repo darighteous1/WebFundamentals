@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(http://fonts.gstatic.com/s/ubuntu/v8/_aijTyevf54tkVDLy-dlnD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://fonts.gstatic.com/s/ubuntu/v8/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(http://fonts.gstatic.com/s/ubuntu/v8/0ihfXUL2emPh0ROJezvraD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+a:hover {
+    color: #43E8D8;
+}
+#wrapper {
+    max-width: 1100px;
+    background-color: #FFF;
+    margin: 0 auto;
+}
+
+#page-header {
+    text-align: center;
+    background: #504d84; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #504d84 0%, #4d9f99 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #504d84 0%,#4d9f99 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #504d84 0%,#4d9f99 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#504d84', endColorstr='#4d9f99',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    padding-bottom: 30px;
+}
+
+#nav-wrapper {
+    height: 40px;
+    padding: 15px 150px;
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+
+#home {
+    float: left;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+}
+
+#main-nav {
+    float: right;
+}
+
+#home,
+#main-nav {
+    line-height: 40px;
+}
+
+img {
+  object-fit: none;
+  object-position: 0 0;
+  width: 111px;
+  height: 111px;
+}
+nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav > ul > li {
+    font-family: 'Ubuntu';
+    font-size: 13px;
+    float: left;
+    margin-right: 10px;
+}
+
+
+#site-title {
+    clear: both;
+    margin: 0;
+    font-family: 'Ubuntu';
+    font-size: 60px;
+    font-weight: bold;
+    color: #43E8D8;
+}
+
+#small-slogan {
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: 'Ubuntu';
+    font-size: 16px;
+}
+
+.big-slogan {
+    
+    font-family: 'Ubuntu';
+    font-size: 36px;
+    color: #FFF;
+    margin: 0 auto;
+}
+
+#get-started {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 70px;
+    background-color: transparent;
+    border: 3px solid #FFF;
+    font-family: 'Ubuntu';
+    font-size: 24px;
+    color: #FFF;
+}
+
+#get-started:hover {
+    color: #43E8D8;
+    border-color: #43E8D8;
+    cursor: pointer;
+}
+
+.comments {
+    font-family: 'Myriad Pro';
+    font-size: 16px;
+}
+#options {
+    object-position: -19px -9px;
+}
+
+#interfaces {
+    object-position: -179px -9px;
+}
+
+#documentation {
+    object-fit: none;
+    object-position: -350px -9px;
+}
+
+.features {
+    width: 30%;
+    text-align: center;
+    float: left;
+    margin-right: 5%;
+}
+
+.features:last-of-type {
+    margin: 0;
+}
+
+.read-about > a {
+    color: #8fbdcd;
+}
+
+#middle {
+    clear: both;
+    height: 50px;
+    background-color: #EC7878;
+    text-align: center;
+}
+
+section > header {
+    margin: 25px auto;
+    font-family: 'Ubuntu';
+    font-size: 28px;
+    text-align: center;
+    color: #808080;
+}
+
+#middle > header {
+    line-height: 50px;
+    font-size: 20px;
+    color: #FFF;
+}
+
+#company-presentation {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+}
+
+.company-info {
+    width: 45%;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: #F5F5F5;
+}
+
+.company-info > img {
+    float: left;
+    margin-right: 25px;
+}
+
+.company-info > .content {
+    padding-top: 15px;
+    padding-right: 5px;
+}
+
+.content {
+    font-family: 'Myriad Pro';
+    font-size: 13px;
+    margin: 10px auto;
+}
+
+.comments {
+    font-size: 16px;
+}
+
+#quote {
+    width: 65%;
+    margin: 0 auto;
+    font-style: italic;
+    text-align: center;
+}
+
+#author {
+    color: #8fbdcd;
+    text-align: center;
+}
+#underline > a {
+    width: 200px;
+    padding-bottom: 10px;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    margin: 0 auto;
+    border-bottom: 2px solid #FFF;
+}
+
+#underline > a:hover {
+    border-bottom-color: #43E8D8;
+}

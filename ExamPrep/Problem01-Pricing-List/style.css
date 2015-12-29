@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+/**********************************************************************
+RESET
+**********************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+/**********************************************************************
+GENERAL STYLING
+**********************************************************************/
+html {
+  height: 100%;
+}
+#wrapper {
+  width: 1000px;
+  font: 16px Tahoma, sans-serif;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/******************************************/
+header, .option > p {
+  font-family: Vollkorn;
+  color: #9DA6AF;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  height: 45px;
+  color: #9DA6AF;
+  border-bottom: 1pt solid #F1F2F4;
+}
+
+header > h1,
+header > h3 {
+  text-align: center;
+  margin: 0;
+}
+
+header > h3 {
+  font-weight: normal;
+}
+
+header > h1 {
+  font-size: 40px;
+  padding: 15px 0;
+}
+
+.option > header {
+  font-size: 30px;
+  background-color: #EBEFF2;
+  margin: 0;
+  padding: 35px 0;
+}
+
+.option > p {
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.option {
+  float: left;
+  width: 320px;
+  height: 500px;
+  margin-right: 20px;
+  position: relative;
+  background-color: #F6F7F9;
+}
+
+button {
+  position: absolute;
+  bottom: 0;
+  width: 260px;
+  height: 50px;
+  background-color: #CAD5D9;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 10px;
+  left: 30px;
+}
+
+.option:last-of-type {
+  margin: 0;
+}
+
+#content {
+  margin: 0 auto;
+}
+
+.option:hover > header,
+.option:hover > button {
+  background-color: #65D3E2;
+  cursor: pointer;
+}
+
+.option:hover > p {
+  color: #65D3E2;
+  cursor: pointer;
+}
+
+.option:hover > header {
+  color: #FFF;
+}
